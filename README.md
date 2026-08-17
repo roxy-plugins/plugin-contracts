@@ -1,11 +1,15 @@
-# Akashic Plugin Contracts
+# Roxy Plugin Contracts
 
-这个仓库拥有 Akashic Plugin API v2 的跨仓库静态门控。它不加载插件，也不读取正式
+这个仓库拥有 Roxy Plugin API v2 的跨仓库静态门控。它不加载插件，也不读取正式
 workspace；只解析候选仓库的 `plugin.py`。
 
 ```bash
 python -m akashic_plugin_contracts check /path/to/plugin.py
 ```
+
+Python distribution、模块、CLI 和 JSON contract ID 暂时保留历史 `akashic_*` 名称，供已经
+发布的插件与 CI 兼容；新的 Git canonical source 是
+`https://github.com/roxy-plugins/plugin-contracts`。
 
 当前硬规则：
 
